@@ -444,6 +444,31 @@ def step(context):
     carrier_page.click_add_carrier(context)
     time.sleep(3)
 
+@Then('enter the "{field}"')
+def step(context, field):
+    carrier_page = carrierpage.CarrierPage(context)
+    carrier_page.input_name_field(field, context)
+    time.sleep(3)
+@Then('enter the omniparcel id "{field}"')
+def step(context, field):
+    carrier_page = carrierpage.CarrierPage(context)
+    carrier_page.input_parcel_field(field, context)
+    time.sleep(3)
+
+
+@Then('enter the omniparcel name "{field}"')
+def step(context, field):
+    carrier_page = carrierpage.CarrierPage(context)
+    carrier_page.input_parcel_name(field, context)
+    time.sleep(3)
+
+
+@Then('click the checkbox')
+def step(context):
+    carrier_page = carrierpage.CarrierPage(context)
+    carrier_page.click_hub_checkbox(context)
+    time.sleep(3)
+
 # @Then('click on retailer button')
 # def step(context):
 #     home_page = homepage.HomePage(context)

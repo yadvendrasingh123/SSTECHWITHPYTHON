@@ -97,6 +97,12 @@ Feature: OmniReturns Login
     Then click on manage button
     Then click on carrier
     Then click on add carrier
+    Then enter the "Test"
+    Then enter the omniparcel id "0"
+    Then enter the omniparcel name "2"
+    Then click the checkbox
+
+
 
 
 
