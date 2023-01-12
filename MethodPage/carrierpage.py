@@ -20,15 +20,16 @@ class CarrierPage(object):
         utiles.performclick(context, carrierLocators.Add_carrier_xpath)
         return self
 
-    def input_name_field(self,enterdata,context):
+    def input_name_field(self, enterdata, context):
         carrierLocators = Carrier_locators()
         utiles = Utiles()
-        utiles.performsendkeys(context, carrierLocators.Blank_field_name_xpath,enterdata)
+        utiles.performsendkeys(context, carrierLocators.Blank_field_name_xpath, enterdata)
         return self
-    def input_parcel_field(self,enterdata,context):
+
+    def input_parcel_field(self, enterdata, context):
         carrierLocators = Carrier_locators()
         utiles = Utiles()
-        utiles.performsendkeys(context, carrierLocators.Omni_parcel_id_xpath,enterdata)
+        utiles.performsendkeys(context, carrierLocators.Omni_parcel_id_xpath, enterdata)
         return self
 
     def input_parcel_name(self, enterdata, context):
