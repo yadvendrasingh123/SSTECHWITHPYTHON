@@ -3,4 +3,6 @@ class Carrier_locators():
     Add_carrier_xpath = "//a[normalize-space()='Add Carriers']"
     Carrier_name_field_xpath = "//input[@id='Name']"
     
+class Carrier_loc():
+    carrier_xpath = "//a[normalize-space()='Carriers']"
 
